@@ -1,54 +1,169 @@
-{% extends "base.html" %} 
+{% extends 'base.html' %}
 
-{% load static %} 
-{% block title %}Home | Momin Rifat{% endblock %}
+{% load static %}
+{% block title %}
+  Home | Momin Rifat
+{% endblock %}
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+  <link rel="stylesheet" href="{% static 'css/home.css' %}" />
 {% endblock %}
 {% block content %}
-    <div class="pic-about">
-        <div class="pic">
-            <img src="{% static 'images/rifat.jpeg' %}" alt="Profile Picture"/>
-            <hr>
-            <h1 class="deg">Momin Ali Rifat</h1>
-            <div class="social-links">
-                <a href="https://www.facebook.com/Mominrifat09" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://github.com/MominRifat" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/mominrifat/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://codeforces.com/profile/Momin_Rifat" target="_blank">
-                    <img src="{% static 'images/code.png' %}" alt="Codeforces">
-                </a>
-            </div>
-            <p class="designation">Creative Thinker | Programmer</p>
-            <a href="#" class="resume" target="_blank">View Resume</a>
-        </div>
-
-        <div class="about">
-            <h2>About Me</h2>
-            <p>
-                I am a CSE student with a strong passion for Competitive Programming, Data Structures, and Algorithms. 
-                I have represented my university in ICPC and IUPC, honing my problem-solving and algorithmic skills. 
-                Beyond competitions, I actively work on software projects, exploring new technologies and building practical, real-world applications. 
-                I am always eager to learn, collaborate, and take on challenges that push my skills and creativity to the next level.
-            </p>
-            <div class="stats">
-                <div class="stat">
-                    <div class="number">1000+</div>
-                    <div class="label">Problems Solved</div>
-                </div>
-                <div class="stat">
-                    <div class="number">10+</div>
-                    <div class="label">Projects</div>
-                </div>
-                <div class="stat">
-                    <div class="number">5+</div>
-                    <div class="label">IUPC</div>
-                </div>
-            </div>
-        </div>
+  <div class="pic-about">
+    <div class="pic">
+      <img src="{% static 'images/rifat.jpeg' %}" alt="Profile Picture" />
+      <hr />
+      <h1 class="deg">Momin Ali Rifat</h1>
+      <div class="social-links">
+        <a href="https://www.facebook.com/Mominrifat09" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://github.com/MominRifat" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/mominrifat/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://codeforces.com/profile/Momin_Rifat" target="_blank"><img src="{% static 'images/code.png' %}" alt="Codeforces" /></a>
+      </div>
+      <p class="designation">Creative Thinker | Programmer</p>
+      <a href="#" class="resume" target="_blank">View Resume</a>
     </div>
 
-    <div class="projects-section">
-        <h1>Projects</h1>
+    <div class="about">
+      <h2>About Me</h2>
+      <p>I am a CSE student with a strong passion for Competitive Programming, Data Structures, and Algorithms. I have represented my university in ICPC and IUPC, honing my problem-solving and algorithmic skills. Beyond competitions, I actively work on software projects, exploring new technologies and building practical, real-world applications. I am always eager to learn, collaborate, and take on challenges that push my skills and creativity to the next level.</p>
+      <div class="stats">
+        <div class="stat">
+          <div class="number">1000+</div>
+          <div class="label">Problems Solved</div>
+        </div>
+        <div class="stat">
+          <div class="number">10+</div>
+          <div class="label">Projects</div>
+        </div>
+        <div class="stat">
+          <div class="number">5+</div>
+          <div class="label">IUPC</div>
+        </div>
+      </div>
     </div>
+  </div>
+  
+
+
+
+
+
+
+  <div class="projects-section">
+    <p class="project-tag">🚀</p>
+    <h1 class="project-head">Projects</h1>
+    <p class="project-para">Discover all exciting projects I have worked on</p>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="{% static 'images/website.jpeg' %}" alt="Math Club Website" />
+        <p class="project-title">Math Club Website</p>
+      </div>
+      <div class="project-card">
+        <img src="{% static 'images/hotel.png' %}" alt="Hotel Management System" />
+        <p class="project-title">Hotel Management System</p>
+      </div>
+      <div class="project-card">
+        <img src="{% static 'images/snake.png' %}" alt="Snake Game" />
+        <p class="project-title">Snake Game</p>
+      </div>
+    </div>
+    <div class="link-container">
+      <a href="{% url 'project:project' %}" class="project-link {% if request.resolver_match.url_name == 'project' %}active{% endif %}">Explore All Projects</a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+    <div class="expatise-section">
+        <p class="expatise-tag">⭐</p>
+        <h1 class="expatise-head">Expertise</h1>
+        <p class="expatise-para">Discover my Skill, Experience & Education</p>
+
+        <div class="do-cards">
+
+            <!-- Skill Terminal -->
+            <div class="terminal-card">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <pre>
+    <span class="cpp-keyword">#include</span> &lt;iostream&gt;
+    <span class="cpp-keyword">#include</span> &lt;vector&gt;
+    <span class="cpp-keyword">using</span> <span class="cpp-keyword">namespace</span> std;
+
+    <span class="cpp-type">int</span> <span class="cpp-function">main</span>() {
+        vector&lt;string&gt; languages = {
+            <span class="cpp-string">"C"</span>, <span class="cpp-string">"C++"</span>, <span class="cpp-string">"Python"</span>, <span class="cpp-string">"SQL"</span>
+            <span class="cpp-string">"Java"</span>, <span class="cpp-string">"JavaScript"</span>,
+        };
+        vector&lt;string&gt; skills = {
+            <span class="cpp-string">"Data Structures"</span>, <span class="cpp-string">"Algorithms"</span>,
+            <span class="cpp-string">"Problem Solving"</span>
+        };
+        <span class="cpp-keyword">return</span> <span class="cpp-number">0</span>;
+    }
+                </pre>
+            </div>
+
+            <!-- Experience Terminal -->
+            <div class="terminal-card">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <pre>
+    <span class="cpp-keyword">#include</span> &lt;iostream&gt;
+    <span class="cpp-keyword">#include</span> &lt;vector&gt;
+    <span class="cpp-keyword">using</span> <span class="cpp-keyword">namespace</span> std;
+
+    <span class="cpp-type">int</span> <span class="cpp-function">main</span>() {
+        <span class="cpp-type">int</span> problemsSolved = <span class="cpp-number">1000</span>;
+        <span class="cpp-type">int</span> projects = <span class="cpp-number">10</span>;
+        vector&lt;string&gt; contests = {
+            <span class="cpp-string">"5+ IUPC"</span>,
+            <span class="cpp-string">"1 ICPC"</span>
+        };
+        <span class="cpp-keyword">return</span> <span class="cpp-number">0</span>;
+    }
+                </pre>
+            </div>
+
+            <!-- Education Terminal -->
+            <div class="terminal-card">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <pre>
+    <span class="cpp-keyword">#include</span> &lt;iostream&gt;
+    <span class="cpp-keyword">using</span> <span class="cpp-keyword">namespace</span> std;
+
+    <span class="cpp-type">int</span> <span class="cpp-function">main</span>() {
+        vector&lt;string&gt; education = {
+            <span class="cpp-string">"University of Asia Pacific"</span>,
+            <span class="cpp-string">"Department: CSE"</span>,
+            <span class="cpp-string">"Current Semester: 3.1"</span>
+        };
+        <span class="cpp-keyword">return</span> <span class="cpp-number">0</span>;
+    }
+                </pre>
+            </div>
+        </div>
+    <div class="link-container">
+        <p>Explore Expertise</p>
+    </div>
+    </div>
+
+
 {% endblock %}

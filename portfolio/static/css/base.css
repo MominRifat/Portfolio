@@ -319,6 +319,8 @@ hr {
     background: linear-gradient(90deg, #01011a, #353542, #01011a);
     padding: 12px 0;
     text-align: center;
+    position: relative;
+    width: 100%;
 }
 
 .footer-sub p {
