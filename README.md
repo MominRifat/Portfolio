@@ -1,6 +1,6 @@
 # 🌟 My Personal Portfolio Website
 
-Welcome to my portfolio! This website showcases my journey, skills, projects, and experiences. 🚀✨
+Welcome to my portfolio! This website showcases my journey, skills, projects, and experiences.. 🚀✨
 
 ---
 
