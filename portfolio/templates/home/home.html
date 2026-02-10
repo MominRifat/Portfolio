@@ -1,0 +1,54 @@
+{% extends "base.html" %} 
+
+{% load static %} 
+{% block title %}Home | Momin Rifat{% endblock %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+{% block content %}
+    <div class="pic-about">
+        <div class="pic">
+            <img src="{% static 'images/rifat.jpeg' %}" alt="Profile Picture"/>
+            <hr>
+            <h1 class="deg">Momin Ali Rifat</h1>
+            <div class="social-links">
+                <a href="https://www.facebook.com/Mominrifat09" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/MominRifat" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mominrifat/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://codeforces.com/profile/Momin_Rifat" target="_blank">
+                    <img src="{% static 'images/code.png' %}" alt="Codeforces">
+                </a>
+            </div>
+            <p class="designation">Creative Thinker | Programmer</p>
+            <a href="#" class="resume" target="_blank">View Resume</a>
+        </div>
+
+        <div class="about">
+            <h2>About Me</h2>
+            <p>
+                I am a CSE student with a strong passion for Competitive Programming, Data Structures, and Algorithms. 
+                I have represented my university in ICPC and IUPC, honing my problem-solving and algorithmic skills. 
+                Beyond competitions, I actively work on software projects, exploring new technologies and building practical, real-world applications. 
+                I am always eager to learn, collaborate, and take on challenges that push my skills and creativity to the next level.
+            </p>
+            <div class="stats">
+                <div class="stat">
+                    <div class="number">1000+</div>
+                    <div class="label">Problems Solved</div>
+                </div>
+                <div class="stat">
+                    <div class="number">10+</div>
+                    <div class="label">Projects</div>
+                </div>
+                <div class="stat">
+                    <div class="number">5+</div>
+                    <div class="label">IUPC</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects-section">
+        <h1>Projects</h1>
+    </div>
+{% endblock %}

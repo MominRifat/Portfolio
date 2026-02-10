@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% block title %}
+        Profile
+      {% endblock %}
+    </title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    {% block extra_css %}{% endblock %}
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="{% url 'home:home' %}" class="logo-link"><img src="{% static 'images/R.png' %}" alt="Logo" class="logo-image" /></a>
+        </div>
+        <nav class="main-nav">
+          <ul class="nav-links">
+            <li>
+              <a href="{% url 'home:home' %}" class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a>
+            </li>
+            <li>
+              <a href="{% url 'project:project' %}" class="{% if request.resolver_match.url_name == 'project' %}active{% endif %}">Projects</a>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Expertise <i class="fas fa-chevron-down"></i></a>
+              <div class="dropdown-boxes">
+                <a href="{% url 'skill:skill' %}" class="dropdown-item">
+                  <i class="fas fa-lightbulb"></i>
+                  <div class="dropdown-text">
+                    <div class="title">Skills</div>
+                  </div>
+                </a>
+                <a href="{% url 'experience:experience' %}" class="dropdown-item">
+                  <i class="fas fa-briefcase"></i>
+                  <div class="dropdown-text">
+                    <div class="title">Experience</div>
+                  </div>
+                </a>
+                <a href="{% url 'edu:edu' %}" class="dropdown-item">
+                  <i class="fas fa-graduation-cap"></i>
+                  <div class="dropdown-text">
+                    <div class="title">Education</div>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li>
+              <a href="{% url 'service:service' %}" class="{% if request.resolver_match.url_name == 'service' %}active{% endif %}">Services</a>
+            </li>
+            <li>
+              <a href="{% url 'contact:contact' %}" class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      {% block content %}
+      {% endblock %}
+    </main>
+
+    <hr/>
+    <footer class="footer-sub">
+      <div class="footer-info">
+        <p>
+          © 2026 All Rights Reserved | Developed by
+          <a href="https://www.facebook.com/Mominrifat09" target="_blank">Momin Ali Rifat</a>
+        </p>
+      </div>
+    </footer>
+    {% load static %}
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>
