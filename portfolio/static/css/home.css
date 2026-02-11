@@ -346,7 +346,7 @@ a.project-link.active {
 
 .expatise-section {
     text-align: center;
-    padding: 20px 40px;
+    padding: 20px 60px;
     background: #0b0f14;
     color: #e6edf3;
 }
@@ -376,7 +376,6 @@ a.project-link.active {
     flex-wrap: wrap;
 }
 
-/* Terminal Card */
 .terminal-card {
     background: #0d1117;
     color: #c9d1d9;
@@ -394,7 +393,6 @@ a.project-link.active {
     box-shadow: 0 18px 45px rgba(0,0,0,0.6);
 }
 
-/* Terminal Header */
 .terminal-header {
     background: #161b22;
     padding: 10px 14px;
@@ -412,7 +410,7 @@ a.project-link.active {
 .yellow { background: #ffbd2e; }
 .green { background: #27c93f; }
 
-/* Code Area */
+
 .terminal-card pre {
     padding: 22px;
     font-family: "JetBrains Mono", "Courier New", monospace;
@@ -440,13 +438,15 @@ a.project-link.active {
 }
 
 .cpp-number {
-    color: #f2cc60;
+    color: #11d399;
 }
 
 .cpp-function {
-    color: #d2a8ff;
+    color: #9368c2;
 }
-
+.vari {
+    color: #ffffff;
+}
 .link-container p {
     display: inline-block;
     padding: 10px 12px;
@@ -458,7 +458,7 @@ a.project-link.active {
     border: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
     margin: 25px auto 5px auto;
-    cursor: default; /* since it's not clickable */
+    cursor: default; 
 }
 
 .link-container p:hover {
@@ -467,14 +467,100 @@ a.project-link.active {
     box-shadow: 0 6px 10px rgba(0,0,0,0.3);
 }
 
-.link-container p:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
 .link-container p.active {
     background-color: rgba(255, 255, 255, 0.3);
     border-color: rgba(255,255,255,0.4);
 }
+
+
+
+
+
+.service-section {
+    padding: 40px 10%; 
+    background: linear-gradient(to bottom, #0b0b2b, #000e15 70%, #090a0f);
+    text-align: center;
+    color: #ffffff;
+    box-sizing: border-box; 
+}
+
+.service-tag {
+    font-size: 28px;
+    margin-bottom: 5px;
+    margin-top: 10px; 
+}
+
+.service-head {
+    font-size: 45px;
+    margin: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.service-para {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #d7cdcdcc;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 40px 20px;
+    transition: 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    justify-items: center;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.service-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #58a6ff;
+}
+
+.service-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.link-container {
+    margin-top: 20px;
+    margin-bottom: 10px; 
+}
+
+.services-link {
+    display: inline-block;
+    padding: 10px 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    margin: 25px auto 5px auto;
+}
+
+.services-link:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+}
+
+
+
+
 
