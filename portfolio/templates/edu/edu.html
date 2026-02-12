@@ -1,7 +1,11 @@
 {% extends "base.html" %} 
-
+{% load static %}
+{% block title %}
+  Education | Momin Rifat
+{% endblock %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/edu.css' %}" />
+{% endblock %}
 {% block content %}
-    <h1>This is EDU page</h1>
-    <p>This is page is under construction</p>
-    <h1>    404 Not Fount  </h1>
+    
 {% endblock %}
