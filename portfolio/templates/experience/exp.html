@@ -1,7 +1,56 @@
 {% extends "base.html" %} 
-
+{% load static %}
+{% block title %}
+  Skills | Momin Rifat
+{% endblock %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/exp.css' %}" />
+{% endblock %}
 {% block content %}
-    <h1>This is jexperience page</h1>
-    <p>This is page is under construction</p>
-    <h1>    404 Not Fount  </h1>
+<div class="expertise">
+    <h1 class="skill-title"> Explore My All Experiences </h1>
+    <div class="section-title">Competitive Programming</div>
+    <div class="cp-profiles">
+        <div class="cp-card">
+            <h3>Codeforces</h3>
+            <p>Rating: 1117</p>
+            <a href="https://codeforces.com/profile/Momin_Rifat" target="_blank">View Profile</a>
+        </div>
+        <div class="cp-card">
+            <h3>CodeChef</h3>
+            <p>Rating: 1198 (1★)</p>
+            <a href="https://www.codechef.com/users/momin_rifat" target="_blank">View Profile</a>
+        </div>
+        <div class="cp-card">
+            <h3>Beecrowd</h3>
+            <p>Problems Solved: 100+</p>
+            <a href="https://judge.beecrowd.com/en/users/statistics/906580" target="_blank">View Profile</a>
+        </div>
+        <div class="streak-box">
+            <img src="{% static 'images/cfst.png' %}" alt="Codeforces Streak">
+            <p>Codeforces Streak</p>
+        </div>
+    </div>
+    <div class="section-title">ICPC & Contest Participation</div>
+    <div class="contest-list">
+        <div class="contest-item">ICPC Dhaka Regional 2025</div>
+        <div class="contest-item">ICPC Preliminary Contest 2025</div>
+        <div class="contest-item">CUET Inter University Programming Contest (IUPC) 2025</div>
+        <div class="contest-item">Intra Metropolitan University Programming Contest (IMUPC) 2025</div>
+        <div class="contest-item">UAP Inter-University Collaborative Programming Contest 1.0</div>
+        <div class="contest-item">BUBT Collaborative Programming Contest -1</div>
+        <div class="contest-item last-item">BUBT Collaborative Programming Contest -2</div>
+    </div>
+    <div class="section-title">Academic & Club Activities</div>
+    <div class="club-section">
+        <div class="club-card">
+            <h3>Programming Contest Club</h3>
+            <p>Active Member</p>
+        </div>
+        <div class="club-card">
+            <h3>Math Club</h3>
+            <p>Active Member</p>
+        </div>
+    </div>
+</div>
 {% endblock %}
