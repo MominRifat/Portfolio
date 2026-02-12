@@ -1,7 +1,55 @@
 {% extends "base.html" %} 
-
+{% load static %}
+{% block title %}
+  Skills | Momin Rifat
+{% endblock %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/skill.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+{% endblock %}
 {% block content %}
-    <h1>This is skill page</h1>
-    <p>This is page is under construction</p>
-    <h1>    404 Not Fount  </h1>
+<div class="skill-container">
+    <h1 class="skill-title"> Explore My All Skills </h1>
+    <div class="skills-group">
+        <h3>Programming Languages</h3>
+        <div class="skills-grid">
+            <div class="tech-item"><i class="devicon-c-plain"></i><span>C</span></div>
+            <div class="tech-item"><i class="devicon-cplusplus-plain"></i><span>C++</span></div>
+            <div class="tech-item"><i class="devicon-java-plain"></i><span>Java</span></div>
+            <div class="tech-item"><i class="devicon-python-plain"></i><span>Python</span></div>
+            <div class="tech-item"><i class="devicon-mysql-plain"></i><span>SQL</span></div>
+        </div>
+    </div>
+
+    <div class="skills-group">
+        <h3>Web Technologies</h3>
+        <div class="skills-grid">
+            <div class="tech-item"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+            <div class="tech-item"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+            <div class="tech-item"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+            <div class="tech-item"><i class="devicon-django-plain"></i><span>Django</span></div>
+            <div class="tech-item"><i class="devicon-mysql-plain"></i><span>MySQL</span></div>
+        </div>
+    </div>
+
+    <div class="skills-group">
+        <h3>Java Technologies</h3>
+        <div class="skills-grid">
+            <div class="tech-item"><i class="devicon-java-plain"></i><span>JavaFX</span></div>
+            <div class="tech-item"><i class="fa-solid fa-layer-group"></i><span>Scene Builder</span></div>
+        </div>
+    </div>
+
+    <div class="skills-group">
+        <h3>Tools & Platforms</h3>
+        <div class="skills-grid">
+            <div class="tech-item"><i class="devicon-git-plain"></i><span>Git</span></div>
+            <div class="tech-item"><i class="devicon-github-original"></i><span>GitHub</span></div>
+            <div class="tech-item"><i class="devicon-vscode-plain"></i><span>VS Code</span></div>
+            <div class="tech-item"><i class="fa-solid fa-database"></i><span>XAMPP</span></div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
