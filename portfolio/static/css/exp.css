@@ -1,5 +1,5 @@
 .expertise {
-    background-image: linear-gradient(-20deg, #021a2a 0%, #120b30 100%);  
+    background: linear-gradient(to bottom, #030820, #020523 70%, #000104);
     padding: 40px 20px;
     margin-bottom: 0px;
 }
