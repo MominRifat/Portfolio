@@ -20,8 +20,15 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
     z-index: 1001;
+    box-sizing: border-box; 
+}
+.main-nav {
+    display: flex;
+    align-items: center;         
+    gap: 16px;               
 }
 
 .nav-links {
@@ -93,7 +100,7 @@ body {
     transform: rotate(180deg);
 }
 
-/* PC Styles */
+
 @media (min-width: 768px) {
     .nav-links {
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.03));
@@ -300,6 +307,7 @@ body {
 .logo-image {
     height: 30px;
     width: 40px;
+    margin:0;
     filter: invert(1) brightness(2);
     transition: transform 0.9s ease-in-out;
 }

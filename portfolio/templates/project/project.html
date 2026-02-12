@@ -3,9 +3,151 @@
 {% block title %}Project | Momin Rifat{% endblock %}
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'css/project.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 {% endblock %}
 {% block content %}
-    <h1>This is project page</h1>
-    <p>This is page is under construction</p>
-    <h1>    404 Not Fount  </h1>
+    <div class="project-container">
+        <h1 class="project-head"> Explore My All Projects </h1>
+        <div class="project">
+            <div class="project-img">
+                <img src="{% static 'images/website.jpeg' %}" alt="website"/>
+            </div>
+            <div class="project-content">
+                <h2 class="project-title">UAP Math Club Website</h2>
+                <p class="project-description">
+                    A dynamic web application where students can register and log in to access 
+                    online quizzes, event updates, team information, former president details, 
+                    gallery content, and club recruitment announcements. 
+                    The system is designed to manage club activities efficiently.
+                </p>
+                <div class="project-tech">
+                    <div class="tech-item" title="HTML5"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+                    <div class="tech-item" title="CSS3"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+                    <div class="tech-item" title="JavaScript"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+                    <div class="tech-item" title="Python"><i class="fa-brands fa-python"></i><span>Python</span></div>
+                    <div class="tech-item" title="Django"><i class="devicon-django-plain"></i><span>Django</span></div>
+                    <div class="tech-item" title="Database"><i class="fa-solid fa-database"></i><span>Database</span></div>
+                </div>
+                <div class="project-links">
+                    <a href="https://math-club-website-2.onrender.com/" target="_blank" class="icon-link" title="Live Site">
+                        <i class="fa-solid fa-globe"></i> Live</a>
+                    <a href="https://github.com/MominRifat/Math-Club-Website" target="_blank" class="icon-link" title="Source Code">
+                        <i class="fa-brands fa-github"></i> Code</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-img">
+                <img src="{% static 'images/store.png' %}" alt="store"/>
+            </div>
+            <div class="project-content">
+                <h2 class="project-title">Online Store App</h2>
+                <p class="project-description">
+                    A dynamic App where users can register and log in to access 
+                    a variety of products, add items to their cart, and proceed to checkout.    
+                    The system is designed to manage online shopping efficiently.
+                </p>
+                <div class="project-tech">
+                    <div class="tech-item" title="Java"><i class="fa-brands fa-java"></i><span>Java</span></div>
+                    <div class="tech-item" title="OOP"><i class="fa-solid fa-object-group"></i><span>Java Fx</span></div>
+                    <div class="tech-item" title="CSS3"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="icon-link" title="Live Site"><i class="fa-solid fa-globe"></i> Live</a>
+                    <a href="https://github.com/MominRifat/Online_Store" target="_blank" class="icon-link" title="Source Code">
+                        <i class="fa-brands fa-github"></i> Code</a>
+                </div>
+            </div>  
+        </div>
+        <div class="project">
+            <div class="project-img">
+                <img src="{% static 'images/snake.png' %}" alt="snake"/>
+            </div>
+            <div class="project-content">
+                <h2 class="project-title">Snake Game</h2>
+                <p class="project-description">
+                    A classic Snake game with smooth controls and real-time score tracking.
+                    The player collects food to grow longer while avoiding collisions with walls and itself.
+                    This project demonstrates game logic, collision detection, and event handling.
+                </p>
+                <div class="project-tech">
+                    <div class="tech-item" title="C"><i class="devicon-c-plain colored"></i><span>C</span></div>
+                    <div class="tech-item" title="C++"><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="icon-link" title="Live Site"><i class="fa-solid fa-globe"></i> Live</a>
+                    <a href="https://github.com/MominRifat/Games_Project" target="_blank" class="icon-link" title="Source Code">
+                        <i class="fa-brands fa-github"></i> Code</a>
+                </div>
+            </div>  
+        </div>
+        <div class="project">
+            <div class="project-img">
+                <img src="{% static 'images/ttt.png' %}" alt="ttt"/>
+            </div>
+            <div class="project-content">
+                <h2 class="project-title">Tic Tac Toe Game</h2>
+                <p class="project-description">
+                    A classic Tic Tac Toe game with an interactive 3x3 grid.
+                    Two players take turns marking X and O, aiming to align three in a row.
+                    This project demonstrates turn-based logic, win/draw detection, and simple game interface.
+                </p>
+                <div class="project-tech">
+                    <div class="tech-item" title="Java"><i class="fa-brands fa-java"></i><span>Java</span></div>
+                    <div class="tech-item" title="Java Fx"><i class="fa-solid fa-object-group"></i><span>Java Fx</span></div>
+                    <div class="tech-item" title="CSS3"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="icon-link" title="Live Site"><i class="fa-solid fa-globe"></i> Live</a>
+                    <a href="https://github.com/MominRifat/Games_Project" target="_blank" class="icon-link" title="Source Code"><i class="fa-brands fa-github"></i> Code</a>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-img">
+                <img src="{% static 'images/hotel.png' %}" alt="hotel"/>
+            </div>
+            <div class="project-content">
+                <h2 class="project-title">Hotel Management System</h2>
+                <p class="project-description">
+                    A Hotel Management System that allows efficient management of rooms, bookings, and customer data.
+                    Admins can add, update, and track room availability, reservations, and payments.
+                    This project demonstrates CRUD operations, database integration, and a user-friendly interface.
+                </p>
+                <div class="project-tech">
+                    <div class="tech-item" title="Database"><i class="fa-solid fa-database"></i><span>Database</span></div>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="icon-link" title="Live Site"><i class="fa-solid fa-globe"></i> Live</a>
+                    <a href="https://github.com/MominRifat/Hotel_Management_System" target="_blank" class="icon-link" title="Source Code">
+                        <i class="fa-brands fa-github"></i> Code</a>
+                </div>
+            </div>  
+        </div>
+        <div class="project">
+            <div class="project-img">
+                <img src="{% static 'images/port.png' %}" alt="port"/>
+            </div>
+            <div class="project-content">
+                <h2 class="project-title">Portfolio</h2>
+                <p class="project-description">
+                   Personal Portfolio Website  | Showcasing Home, Projects, Skills, Experiences, Education, Services & Contact | Modern & Responsive Design
+                </p>
+                <div class="project-tech">
+                    <div class="tech-item" title="HTML5"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+                    <div class="tech-item" title="CSS3"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+                    <div class="tech-item" title="JavaScript"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+                    <div class="tech-item" title="Python"><i class="fa-brands fa-python"></i><span>Python</span></div>
+                    <div class="tech-item" title="Database"><i class="fa-solid fa-database"></i><span>Database</span></div>
+                    <div class="tech-item" title="Django"><i class="devicon-django-plain"></i><span>Django</span></div>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="icon-link" title="Live Site"><i class="fa-solid fa-globe"></i> Live</a>
+                    <a href="https://github.com/MominRifat/Portfolio" target="_blank" class="icon-link" title="Source Code"><i class="fa-brands fa-github"></i> Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
