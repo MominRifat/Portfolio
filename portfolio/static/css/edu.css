@@ -73,6 +73,11 @@ body {
     font-size: 0.95rem;
     color: #d6d6d6;
 }
+.semester {
+    font-size: 0.9rem;
+    color: #d6d6d6;
+}
+
 
 @media (max-width: 768px) {
     .container {
