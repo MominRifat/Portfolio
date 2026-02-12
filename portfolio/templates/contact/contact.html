@@ -1,7 +1,70 @@
 {% extends "base.html" %} 
-
+{% load static %}
+{% block title %}
+  Contact | Momin Rifat
+{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/cont.css' %}" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+{% endblock %}
 {% block content %}
-    <h1>This is Concact page</h1>
-    <p>This is page is under construction</p>
-    <h1>    404 Not Fount  </h1>
+<div class="container">
+    <h1 class="contact-title">Contact Me</h1>
+    <div class="contact-form-section">
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name"><i class="fa-solid fa-user"></i> Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Mail" required>
+            </div>
+            <div class="form-group">
+                <label for="subject"><i class="fa-solid fa-tag"></i> Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message"><i class="fa-solid fa-message"></i> Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+        </form>
+    </div>
+    <div class="contact-info-section">
+        <div class="contact-logos">
+            <a href="mailto:mominrifat8@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-2x"></i></a>
+            <a href="https://linkedin.com/in/mominrifat" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+        </div>
+        <div class="contact-details">
+            <p><i class="fa-solid fa-phone"></i> +880 1811194021</p>
+            <p><i class="fa-solid fa-location-dot"></i> 60/A Momin Hossen Lane, Narinda, Dhaka, Bangladesh</p>
+        </div>
+    </div>
+</div>
+
+<script>
+const form = document.getElementById("contactForm");
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = {
+        name: form.name.value,
+        email: form.email.value,
+        subject: form.subject.value,
+        message: form.message.value
+    };
+    fetch("https://script.google.com/macros/s/AKfycbyS8kI10Ah78OluhEr_AxXgfrZObyICg4FACiKsXrz5Y94oeQY5GRLhBIbrRQMsyCTQ/exec", {
+        method: "POST",
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+        if(data.result === "success") {
+            alert("Message sent!");
+            form.reset();
+        }
+    })
+    .catch(error => console.error("Error!", error.message));
+});
+</script>
 {% endblock %}
