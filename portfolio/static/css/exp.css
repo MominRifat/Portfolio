@@ -1,5 +1,5 @@
 .expertise {
-    background: linear-gradient(to bottom, #030820, #020523 70%, #000104);
+    background: linear-gradient(to bottom, #020327, #01041f 70%, #02061d);
     padding: 40px 20px;
     margin-bottom: 0px;
 }
@@ -9,12 +9,26 @@
     text-align: center;
     font-size: 2.8rem;
     margin: 10px 0 30px;
+    background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #e9e5e5 35%,
+        #031629 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .section-title {
     font-size: 2rem;
     text-align: center;
-    color: rgb(225, 213, 213);
-    margin-bottom: 25px;
+    background: linear-gradient(
+        to bottom,
+        #bdb6b6 0%,
+        #e6dfdf 35%,
+        #071651 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    margin-bottom: 25px;
     font-weight: 600;
 }
 

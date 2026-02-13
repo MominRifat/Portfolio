@@ -15,6 +15,14 @@ body {
     font-weight: 700;
     margin-bottom: 20px;
     margin-bottom: 10px;
+    background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #e9e5e5 35%,
+        #062748 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .contact-form-section {

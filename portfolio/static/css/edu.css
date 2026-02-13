@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #030820, #020523 70%, #000104);
+    background: linear-gradient(to bottom, #020327, #010f1f 70%, #02061d);
     color: #ffffff;
 }
 
@@ -22,6 +22,14 @@ body {
     margin-bottom: 40px;
     font-weight: 700;
     letter-spacing: 1px;
+    background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #e9e5e5 35%,
+        #031629 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .card {

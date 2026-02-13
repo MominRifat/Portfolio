@@ -152,8 +152,14 @@ body {
     font-size: 2rem;
     margin: 0;
     margin-bottom: 12px;
-    color: #58a6ff;
-    text-align: center;
+    background: linear-gradient(
+        to bottom,
+        #5c93db 0%,
+        #58b7d7 35%,
+        #2d72b7 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    text-align: center;
 }
 
 .about p {
@@ -180,7 +186,15 @@ body {
 .number {
     font-size: 2.4rem;
     font-weight: 700;
-    color: #58a6ff;
+    background: linear-gradient(
+        to bottom,
+        #5c93db 0%,
+        #58b7d7 35%,
+        #2d72b7 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+    text-align: center;    
 }
 
 .label {
@@ -245,8 +259,14 @@ body {
 .project-head {
     font-size: 2.8rem;
     font-weight: 700;
-    color: #ffffff;
-    margin: 4px 0 12px 0;
+    background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #e9e5e5 35%,
+        #040d36 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    margin: 4px 0 12px 0;
 }
 
 .project-para {
@@ -294,7 +314,7 @@ body {
     margin: 0;
     font-size: 1.3rem; 
     font-weight: 600;
-    color: #ffffff; 
+    color: #e5dfdf; 
     background: #111827;
     padding: 8px 0; 
     text-align: center;
@@ -361,6 +381,14 @@ a.project-link.active {
     margin: 2px;
     padding-top: 10px;
     padding-bottom: 10px;
+    background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #ffffff 35%,
+        #000000 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .expatise-para {
@@ -495,6 +523,14 @@ a.project-link.active {
     margin: 2px;
     padding-top: 10px;
     padding-bottom: 10px;
+    background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #e9e5e5 35%,
+        #03292f 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .service-para {

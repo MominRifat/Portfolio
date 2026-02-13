@@ -1,7 +1,18 @@
 {% extends "base.html" %} 
-
-{% block content %}
-    <h1>This is service page</h1>
-    <p>This is page is under construction</p>
-    <h1>    404 Not Fount  </h1>
+{% load static %}
+{% block title %}
+  Services | Momin Rifat
 {% endblock %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/serve.css' %}" />
+{% endblock %}
+{% block content %}
+    <div class="service-container">
+        <div class="service-status">
+            <h1>No Services Available</h1>
+            <p>Currently, no services are available. Please check back later.</p>
+            <p>Thank you for your patience.</p>
+        </div>
+    </div>
+{% endblock %}
+

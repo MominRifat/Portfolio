@@ -18,7 +18,14 @@ body {
     text-align: center;
     font-size: 2.8rem;
     margin-bottom: 50px;
-    color: #ffffff;
+    background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #e9e5e5 35%,
+        #030a27 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .project {
@@ -82,7 +89,14 @@ body {
     font-size: 1.9rem;
     margin-top: 1px;
     margin-bottom: 4px;
-    color: skyblue;
+        background: linear-gradient(
+        to bottom,
+        #0c90e7 0%,
+        #a0b8e4 35%,
+        #8898df 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center; 
 }
 

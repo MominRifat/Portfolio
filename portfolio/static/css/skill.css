@@ -1,11 +1,19 @@
 .skill-container {
     padding: 10px 20px;
-    background: linear-gradient(to bottom, #030820, #060223 70%, #000104);
+    background: linear-gradient(to bottom, #020327, #010f1f 70%, #02061d);
 }
 .skill-title {
     text-align: center;
     font-size: 2.8rem;
     margin: 30px 0 50px;
+    background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #e9e5e5 35%,
+        #040e36 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .skills-group {
@@ -22,7 +30,14 @@
     margin-top: 6px;
     margin-bottom: 22px;
     font-size: 1.3rem;
-    color: skyblue;
+        background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #e9e5e5 35%,
+        #5b76df 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
 }
 
