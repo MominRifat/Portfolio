@@ -1,6 +1,6 @@
 .skill-container {
     padding: 10px 20px;
-    background: linear-gradient(to bottom, #020327, #010f1f 70%, #02061d);
+    background: linear-gradient(to bottom, #020327, #02011f 70%, #02061d);
 }
 
 .skill-title {
@@ -13,6 +13,7 @@
         #e9e5e5 35%,
         #040e36 100%
     );
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -37,6 +38,7 @@
         #e9e5e5 35%,
         #5b76df 100%
     );
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;

@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(90deg, #01011a, #353542, #01011a);
+    background: linear-gradient(90deg, #212235, #212235, #212235);
     padding: 16px 16px;
     position: fixed;
     top: 0;
@@ -43,42 +43,45 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #eaeaea;
+    font-weight: bold; 
+    color: #c5c6da;
     padding: 6px 14px;
     display: inline-block;
     position: relative;
+    text-align: center;
     transition: color 0.25s ease, transform 0.25s ease;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     z-index: 1;
 }
 
 .nav-links a::before {
     content: '';
     position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, rgba(6, 6, 75, 0.35), rgba(53, 53, 66, 0.35), rgba(255, 255, 255, 0.8)), rgba(255, 255, 255, 0.65);
+    top: -2.5px;   
+    left: -2.5px;      
+    right: -2.5px;     
+    bottom: -2.5px;  
+    background: rgba(53, 77, 110, 0.5); 
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-radius: 999px;
-    transform: scale(0.9);
+    border-radius: 10px;  
     opacity: 0;
-    transition: transform 0.25s ease, opacity 0.25s ease;
+    transition: all 0.25s ease;
     z-index: -1;
 }
 
 .nav-links>li>a:hover::before,
 .nav-links>li>a.active::before {
-    transform: scale(1);
     opacity: 1;
 }
 
 .nav-links a:hover {
-    color: #111;
+    color: #ffffff;
     transform: translateY(-1px);
 }
 
 .nav-links a.active {
-    color: #111;
+    color: #9abfe5;
 }
 
 .dropdown {
@@ -103,10 +106,6 @@ body {
 
 @media (min-width: 768px) {
     .nav-links {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.03));
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
-        border-radius: 30px;
         padding: 6px 18px;
         max-width: fit-content;
         position: absolute;
@@ -121,7 +120,7 @@ body {
         top: 85%;
         left: 50%;
         transform: translateX(-50%) translateY(-10px);
-        background: rgba(255, 255, 255, 0.05);
+        background: rgba(40, 50, 66, 0.2); 
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
         padding: 10px;
@@ -130,7 +129,7 @@ body {
         flex-wrap: nowrap;
         justify-content: center;
         gap: 10px;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 6px 12px rgba(47, 46, 46, 0.4);
         min-width: 280px;
         opacity: 0;
         pointer-events: none;
@@ -148,19 +147,17 @@ body {
     .dropdown-item {
         display: flex;
         flex-direction: column;
-        /* icon above title */
         align-items: center;
         gap: 4px;
         padding: 12px 18px;
-        background: linear-gradient(90deg, #71717e, #5f5f69, #71717e);
-        backdrop-filter: blur(6px);
-        -webkit-backdrop-filter: blur(6px);
+        background: linear-gradient(90deg, #383956, #383956, #383956);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
         border-radius: 8px;
-        color: #eaeaea;
+        color: #c5c6da;
         text-decoration: none;
         transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
         flex: none;
-        /* prevent stretching */
         text-align: center;
         font-size: 0.8rem;
         min-width: 90px;
@@ -171,13 +168,12 @@ body {
     }
 
     .dropdown-item:hover {
-        background-color: #aaa0a0;
         transform: translateY(-2px);
     }
 
     .dropdown-item i {
         font-size: 18px;
-        color: #d5dee2;
+        color: #c5c6da;
         transition: color 0.3s ease;
     }
 
@@ -187,12 +183,11 @@ body {
 
     .dropdown-text .title {
         font-weight: 600;
-        color: rgb(202, 194, 194);
         transition: color 0.3s ease;
     }
 
     .dropdown-item:hover .dropdown-text .title {
-        color: #ffffff;
+        color: #9abfe5;
     }
 }
 
@@ -324,7 +319,7 @@ hr {
 }
 
 .footer-sub {
-    background: linear-gradient(90deg, #01011a, #353542, #01011a);
+    background: linear-gradient(90deg, #212235, #212235, #212235);
     padding: 12px 0;
     text-align: center;
     position: relative;
@@ -333,12 +328,12 @@ hr {
 
 .footer-sub p {
     margin: 0;
-    color: #989090;
+    color: #afb0bb;
     font-size: 0.85rem;
 }
 
 .footer-sub a {
-    color: #d9cccc;
+    color: #bbbddd;
     text-decoration: none;
     transition: color 0.3s ease;
 }
