@@ -19,6 +19,7 @@ body {
         #c5e3ee
     );
     background-size: 400% 400%;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: cold-colors 4s linear infinite;
@@ -194,6 +195,7 @@ body {
         #b39ad6 75%,
         #9fc8d8 100%
     );
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;    
     text-align: center;
@@ -232,6 +234,7 @@ body {
         #b39ad6 75%,
         #9fc8d8 100%
     );
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;    
     text-align: center;    
@@ -305,8 +308,10 @@ body {
         #e9e5e5 35%,
         #040d36 100%
     );
+    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;    margin: 4px 0 12px 0;
+    -webkit-text-fill-color: transparent;
+    margin: 4px 0 12px 0;
 }
 
 .project-para {
@@ -427,6 +432,7 @@ a.project-link.active {
         #ffffff 35%,
         #000000 100%
     );
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -569,6 +575,7 @@ a.project-link.active {
         #e9e5e5 35%,
         #03292f 100%
     );
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
