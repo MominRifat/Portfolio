@@ -11,45 +11,105 @@
 {% block content %}
 <div class="skill-container">
     <h1 class="skill-title"> Explore My All Skills </h1>
+
     <div class="skills-group">
         <h3>Programming Languages</h3>
         <div class="skills-grid">
-            <div class="tech-item"><i class="devicon-c-plain"></i><span>C</span></div>
-            <div class="tech-item"><i class="devicon-cplusplus-plain"></i><span>C++</span></div>
-            <div class="tech-item"><i class="devicon-java-plain"></i><span>Java</span></div>
-            <div class="tech-item"><i class="devicon-python-plain"></i><span>Python</span></div>
-            <div class="tech-item"><i class="devicon-mysql-plain"></i><span>SQL</span></div>
+            <div class="tech-item-1">
+                <img src="{% static 'icons/c.png' %}" alt="C" class="tech-logo">
+                <span>C</span>
+            </div>
+            <div class="tech-item-1">
+                <img src="{% static 'icons/cpp.png' %}" alt="C++" class="tech-logo">
+                <span>C++</span>
+            </div>
+            <div class="tech-item-1">
+                <img src="{% static 'icons/java.png' %}" alt="Java" class="tech-logo">
+                <span>Java</span>
+            </div>
+            <div class="tech-item">
+                <img src="{% static 'icons/py.png' %}" alt="Python" class="tech-logo">
+                <span>Python</span>
+            </div>
+            <div class="tech-item-1">
+                <img src="{% static 'icons/sql.png' %}" alt="SQL" class="tech-logo">
+                <span>SQL</span>
+            </div>
         </div>
     </div>
 
     <div class="skills-group">
         <h3>Web Technologies</h3>
         <div class="skills-grid">
-            <div class="tech-item"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
-            <div class="tech-item"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
-            <div class="tech-item"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
-            <div class="tech-item"><i class="devicon-django-plain"></i><span>Django</span></div>
-            <div class="tech-item"><i class="devicon-mysql-plain"></i><span>MySQL</span></div>
+            <div class="tech-item">
+                <img src="{% static 'icons/html5.png' %}" alt="HTML5" class="tech-logo">
+                <span>HTML</span>
+            </div>
+            <div class="tech-item">
+                <img src="{% static 'icons/css.png' %}" alt="CSS3" class="tech-logo">
+                <span>CSS</span>
+            </div>
+            <div class="tech-item">
+                <img src="{% static 'icons/js.png' %}" alt="JavaScript" class="tech-logo">
+                <span>JavaScript</span>
+            </div>
+            <div class="tech-item">
+                <img src="{% static 'icons/bt.png' %}" alt="Bootstrap" class="tech-logo">
+                <span>Bootstrap</span>
+            </div>
+            <div class="tech-item">
+                <img src="{% static 'icons/tl.png' %}" alt="Tailwind" class="tech-logo">
+                <span>Tailwind</span>
+            </div>
+            <div class="tech-item">
+                <img src="{% static 'icons/flask.png' %}" alt="Flask" class="tech-logo">
+                <span>Flask</span>
+            </div>
+            <div class="tech-item">
+                <img src="{% static 'icons/django.ico' %}" alt="Django" class="tech-logo">
+                <span>Django</span>
+            </div>
+            <div class="tech-item">
+                <img src="{% static 'icons/mysql.png' %}" alt="MySQL" class="tech-logo">
+                <span>MySQL</span>
+            </div>
         </div>
     </div>
 
     <div class="skills-group">
         <h3>Java Technologies</h3>
         <div class="skills-grid">
-            <div class="tech-item"><i class="devicon-java-plain"></i><span>JavaFX</span></div>
-            <div class="tech-item"><i class="fa-solid fa-layer-group"></i><span>Scene Builder</span></div>
+            <div class="tech-item">
+                <img src="{% static 'icons/fx.png' %}" alt="JavaFX" class="tech-logo">
+                <span>JavaFX</span>
+            </div>
+            <div class="tech-item">
+                <img src="{% static 'icons/sc.png' %}" alt="Scene Builder" class="tech-logo">
+                <span>Scene Builder</span>
+            </div>
         </div>
     </div>
 
     <div class="skills-group">
         <h3>Tools & Platforms</h3>
         <div class="skills-grid">
-            <div class="tech-item"><i class="devicon-git-plain"></i><span>Git</span></div>
-            <div class="tech-item"><i class="devicon-github-original"></i><span>GitHub</span></div>
-            <div class="tech-item"><i class="devicon-vscode-plain"></i><span>VS Code</span></div>
-            <div class="tech-item"><i class="fa-solid fa-database"></i><span>XAMPP</span></div>
+            <div class="tech-item">
+                <img src="{% static 'icons/git.png' %}" alt="Git" class="tech-logo">
+                <span>Git</span>
+            </div>
+            <div class="tech-item">
+                <img src="{% static 'icons/gh.png' %}" alt="GitHub" class="tech-logo">
+                <span>GitHub</span>
+            </div>
+            <div class="tech-item">
+                <img src="{% static 'icons/vs.png' %}" alt="VS Code" class="tech-logo">
+                <span>VS Code</span>
+            </div>
+            <div class="tech-item">
+                <img src="{% static 'icons/xm.png' %}" alt="XAMPP" class="tech-logo">
+                <span>XAMPP</span>
+            </div>
         </div>
     </div>
 </div>
-
 {% endblock %}

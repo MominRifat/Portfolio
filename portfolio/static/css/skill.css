@@ -2,6 +2,7 @@
     padding: 10px 20px;
     background: linear-gradient(to bottom, #020327, #010f1f 70%, #02061d);
 }
+
 .skill-title {
     text-align: center;
     font-size: 2.8rem;
@@ -30,7 +31,7 @@
     margin-top: 6px;
     margin-bottom: 22px;
     font-size: 1.3rem;
-        background: linear-gradient(
+    background: linear-gradient(
         to bottom,
         #ffffff 0%,
         #e9e5e5 35%,
@@ -45,7 +46,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 18px;
+    gap: 20px;
 }
 
 .tech-item {
@@ -55,38 +56,66 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
     background: rgba(255, 255, 255, 0.08);
     border-radius: 14px;
     transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+.tech-item-1 {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
 
-.tech-item i {
-    font-size: 42px;
+.tech-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.tech-item-1 img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .tech-item span {
     font-size: 0.85rem;
     color: #ddd;
+    display: block;
+    text-align: center;
 }
-
+.tech-item-1 span {
+    font-size: 0.85rem;
+    color: #ddd;
+    display: block;
+    text-align: center;
+}
 .tech-item:hover {
     transform: translateY(-6px);
     background: rgba(255, 255, 255, 0.18);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
-
-.devicon-c-plain { color: #A8B9CC; }
-.devicon-cplusplus-plain { color: #00599C; }
-.devicon-java-plain { color: #c80404; }
-.devicon-python-plain { color: #dce70c; }
-.devicon-mysql-plain { color: #4479A1; }
-.fa-html5 { color: #E34F26; }
-.fa-css3-alt { color: #1572B6; }
-.fa-js { color: #F7DF1E; }
-.devicon-django-plain { color: #098c5a; }
-.fa-layer-group { color: #5f7ec0; }
-.devicon-git-plain { color: #F05032; }
-.devicon-github-original { color: #ffffff; }
-.devicon-vscode-plain { color: #007ACC; }
-.fa-database { color: #F29111; }
+.tech-item-1:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+.tech-item:hover img {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+.tech-item-1:hover img {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
