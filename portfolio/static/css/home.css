@@ -12,17 +12,17 @@ body {
     font-size: 20px;
     background: linear-gradient(
         270deg,
-        #b7d8e6,
-        #c3b6ee,
-        #bcdff0,
-        #dcc7ee,
-        #c5e3ee
+        #79b7d2,
+        #a99cd4,
+        #9cc4d6,
+        #b093c9,
+        #6da6bc
     );
     background-size: 400% 400%;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: cold-colors 4s linear infinite;
+    animation: cold-colors 3s linear infinite;
 }
 
 @keyframes cold-colors {
@@ -84,7 +84,7 @@ body {
     box-shadow:
         0 0 12px rgba(180, 200, 255, 0.6),
         0 0 25px rgba(210, 190, 255, 0.45),
-        0 0 40px rgba(255, 255, 255, 0.25);
+        0 0 40px rgba(108, 131, 205, 0.25);
 }
 
 .pic img {
@@ -166,14 +166,16 @@ body {
     background: #71a7e6;
     color: #201f20;
     font-size: 0.85rem;
-    font-weight: 500;
+    font-weight: bold;
     transition: background 0.3s ease, transform 0.2s ease;
     cursor: pointer;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
 }
 .resume:hover {
     background: #8ac0fd;
     color: #353939;
-    transform: translateY(-1px);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(198, 191, 191, 0.3);
 }
 
 .about {
@@ -187,14 +189,11 @@ body {
     font-size: 2rem;
     margin: 0;
     margin-bottom: 12px;
-    background: linear-gradient(
-        to bottom,
-        #8fbfd6 0%,
-        #a79ad8 25%,
-        #8fb9d6 50%,
-        #b39ad6 75%,
-        #9fc8d8 100%
-    );
+    color: #3773CC;
+    background-image: linear-gradient(90deg, #3777d6 0%, #a877d6 34%, #8d5dcb 83%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;    
@@ -282,11 +281,9 @@ body {
 
 
 .projects-section {
+    background: #1a1a2c;
     width: 100%;
     padding: 45px 20px 35px 20px;
-    background-color: #05051f;
-    opacity: 1;
-    background-image:  linear-gradient(#171719 0.9px, transparent 0.9px), linear-gradient(to right, #171719 0.9px, #05051f 0.9px);
     background-size: 18px 18px;
     text-align: center;
     box-sizing: border-box;
@@ -302,12 +299,12 @@ body {
 .project-head {
     font-size: 2.8rem;
     font-weight: 700;
-    background: linear-gradient(
-        to bottom,
-        #ffffff 0%,
-        #e9e5e5 35%,
-        #040d36 100%
-    );
+    color: #3773CC;
+    background-image: linear-gradient(90deg, #558bdb 0%, #ad7dd9 34%, #8d5dcb 83%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -315,7 +312,17 @@ body {
 }
 
 .project-para {
-    color: #b5b5b5;
+    background: linear-gradient(
+        to bottom,
+        #8fbfd6 0%,
+        #a79ad8 25%,
+        #8fb9d6 50%,
+        #b39ad6 75%,
+        #9fc8d8 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
     font-size: 1.3rem;
     margin-bottom: 40px;
 }
@@ -372,8 +379,8 @@ body {
 a.project-link {
     display: inline-block;
     padding: 10px 12px;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
+    background: #71a7e6;
+    color: #201f20;
     text-decoration: none;
     border-radius: 8px;
     font-weight: 600;
@@ -381,15 +388,17 @@ a.project-link {
     border: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
     margin: 25px auto 5px auto; 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
 }
 .projects-section .link-container {
     text-align: center;
 }
 
 a.project-link:hover {
-    background-color: rgba(255, 255, 255, 0.25);
+    background: #8ac0fd;
+    color: #353939;
     transform: translateY(-3px);
-    box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 10px rgba(198, 191, 191, 0.3);
 }
 
 a.project-link:active {
@@ -412,7 +421,7 @@ a.project-link.active {
 .expatise-section {
     text-align: center;
     padding: 20px 60px;
-    background: #0b0f14;
+    background: linear-gradient(90deg, #212235, #212235, #212235);
     color: #e6edf3;
 }
 
@@ -426,12 +435,8 @@ a.project-link.active {
     margin: 2px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background: linear-gradient(
-        to bottom,
-        #ffffff 0%,
-        #ffffff 35%,
-        #000000 100%
-    );
+    color: #3773CC;
+    background-image: linear-gradient(90deg, #558bdb 0%, #ad7dd9 34%, #8d5dcb 83%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -440,7 +445,17 @@ a.project-link.active {
 .expatise-para {
     font-size: 20px;
     margin-bottom: 40px;
-    color: #d7cdcdcc;
+    background: linear-gradient(
+        to bottom,
+        #8fbfd6 0%,
+        #a79ad8 25%,
+        #8fb9d6 50%,
+        #b39ad6 75%,
+        #9fc8d8 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
 }
 
 .do-cards {
@@ -524,21 +539,23 @@ a.project-link.active {
 .link-container p {
     display: inline-block;
     padding: 10px 12px;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
+    background: #71a7e6;
+    color: #201f20;
     border-radius: 8px;
     font-weight: 600;
     transition: all 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
     margin: 25px auto 5px auto;
-    cursor: default; 
+    cursor: pointer; 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
 }
 
 .link-container p:hover {
-    background-color: rgba(255, 255, 255, 0.25);
+    background: #8ac0fd;
+    color: #353939;
     transform: translateY(-3px);
-    box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 10px rgba(198, 191, 191, 0.3);
 }
 
 .link-container p.active {
@@ -552,7 +569,7 @@ a.project-link.active {
 
 .service-section {
     padding: 40px 10%; 
-    background: linear-gradient(to bottom, #0b0b2b, #000e15 70%, #090a0f);
+    background: linear-gradient(90deg, #171824, #1c1e2d, #171824);    
     text-align: center;
     color: #ffffff;
     box-sizing: border-box; 
@@ -568,13 +585,8 @@ a.project-link.active {
     font-size: 45px;
     margin: 2px;
     padding-top: 10px;
-    padding-bottom: 10px;
-    background: linear-gradient(
-        to bottom,
-        #ffffff 0%,
-        #e9e5e5 35%,
-        #03292f 100%
-    );
+    color: #3773CC;
+    background-image: linear-gradient(90deg, #558bdb 0%, #ad7dd9 34%, #8d5dcb 83%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -583,7 +595,17 @@ a.project-link.active {
 .service-para {
     font-size: 20px;
     margin-bottom: 40px;
-    color: #d7cdcdcc;
+    background: linear-gradient(
+        to bottom,
+        #8fbfd6 0%,
+        #a79ad8 25%,
+        #8fb9d6 50%,
+        #b39ad6 75%,
+        #9fc8d8 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
 }
 
 .services-grid {
@@ -593,7 +615,7 @@ a.project-link.active {
 }
 
 .service-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: linear-gradient(90deg, #1e1f30, #212235, #1e1f30);
     backdrop-filter: blur(10px);
     border-radius: 16px;
     padding: 40px 20px;
@@ -626,8 +648,8 @@ a.project-link.active {
 .services-link {
     display: inline-block;
     padding: 10px 12px;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
+    background: #71a7e6;
+    color: #201f20;
     text-decoration: none;
     border-radius: 8px;
     font-weight: 600;
@@ -635,12 +657,14 @@ a.project-link.active {
     border: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
     margin: 25px auto 5px auto;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
 }
 
 .services-link:hover {
-    background-color: rgba(255, 255, 255, 0.25);
+    background: #8ac0fd;
+    color: #353939;
     transform: translateY(-3px);
-    box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 10px rgba(198, 191, 191, 0.3);
 }
 
 
