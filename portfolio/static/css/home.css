@@ -181,7 +181,18 @@ body {
 .about {
     width: 65%;
     min-width: 300px;
-    color: #b8ceea;
+    font-weight: 600;
+    background: linear-gradient(
+        to bottom,
+        #aad0e3 0%,
+        #b6a9e7 25%,
+        #a9cde7 50%,
+        #cab4e7 75%,
+        #badfed 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
     text-align: left;
 }
 
@@ -193,10 +204,7 @@ body {
     background-image: linear-gradient(90deg, #3777d6 0%, #a877d6 34%, #8d5dcb 83%);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;    
+    -webkit-text-fill-color: transparent;  
     text-align: center;
 }
 
@@ -300,14 +308,11 @@ body {
     font-size: 2.8rem;
     font-weight: 700;
     color: #3773CC;
-    background-image: linear-gradient(90deg, #558bdb 0%, #ad7dd9 34%, #8d5dcb 83%);
+    background-image: linear-gradient(90deg, #558bdb 40%, #ad7dd9 34%, #8d5dcb 83%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     margin: 4px 0 12px 0;
 }
 
@@ -366,15 +371,25 @@ body {
     margin: 0;
     font-size: 1.3rem; 
     font-weight: 600;
-    color: #e5dfdf; 
-    background: #111827;
+    background: linear-gradient(
+        to bottom,
+        #8fbfd6 0%,
+        #a79ad8 25%,
+        #8fb9d6 50%,
+        #b39ad6 75%,
+        #9fc8d8 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
     padding: 8px 0; 
     text-align: center;
     min-height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(228, 219, 219, 0.932);
+    border: 1px solid rgba(109, 179, 236, 0.477);
+    border-radius: 4px;
 }
 a.project-link {
     display: inline-block;
@@ -435,8 +450,7 @@ a.project-link.active {
     margin: 2px;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #3773CC;
-    background-image: linear-gradient(90deg, #558bdb 0%, #ad7dd9 34%, #8d5dcb 83%);
+    background-image: linear-gradient(90deg, #3773CC 0%, #558bdb 25%, #ad7dd9 50%, #8d5dcb 75%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -504,6 +518,7 @@ a.project-link.active {
     padding: 22px;
     font-family: "JetBrains Mono", "Courier New", monospace;
     font-size: 14px;
+    font-weight: 500;
     line-height: 1.65;
     white-space: pre;
     overflow-x: auto;
@@ -518,7 +533,7 @@ a.project-link.active {
 }
 
 .cpp-string {
-    color: #0be746;
+    color: #1cba46;
 }
 
 .cpp-comment {
@@ -571,7 +586,7 @@ a.project-link.active {
     padding: 40px 10%; 
     background: linear-gradient(90deg, #171824, #1c1e2d, #171824);    
     text-align: center;
-    color: #ffffff;
+    color: #89a0c7;
     box-sizing: border-box; 
 }
 
@@ -585,8 +600,7 @@ a.project-link.active {
     font-size: 45px;
     margin: 2px;
     padding-top: 10px;
-    color: #3773CC;
-    background-image: linear-gradient(90deg, #558bdb 0%, #ad7dd9 34%, #8d5dcb 83%);
+    background-image: linear-gradient(90deg, #3773CC 0%, #558bdb 25%, #ad7dd9 50%, #8d5dcb 75%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -609,9 +623,10 @@ a.project-link.active {
 }
 
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
+    display: flex;
+    gap: 20px;      
+    justify-content: center;     
+    flex-wrap: wrap;  
 }
 
 .service-card {
@@ -619,9 +634,11 @@ a.project-link.active {
     backdrop-filter: blur(10px);
     border-radius: 16px;
     padding: 40px 20px;
+    width: 325px;
     transition: 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.1);
     justify-items: center;
+    justify-content: center;
 }
 
 .service-card:hover {
@@ -632,7 +649,17 @@ a.project-link.active {
 .service-icon {
     font-size: 40px;
     margin-bottom: 20px;
-    color: #58a6ff;
+    background: linear-gradient(
+        to bottom,
+        #8fbfd6 0%,
+        #a79ad8 25%,
+        #8fb9d6 50%,
+        #b39ad6 75%,
+        #9fc8d8 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
 }
 
 .service-title {

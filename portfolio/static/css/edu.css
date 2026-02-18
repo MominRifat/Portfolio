@@ -22,12 +22,8 @@ body {
     margin-bottom: 40px;
     font-weight: 700;
     letter-spacing: 1px;
-    background: linear-gradient(
-        to bottom,
-        #ffffff 0%,
-        #e9e5e5 35%,
-        #031629 100%
-    );
+    background-image: linear-gradient(90deg, #3773CC 0%, #558bdb 25%, #ad7dd9 50%, #8d5dcb 75%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
