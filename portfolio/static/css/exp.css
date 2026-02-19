@@ -131,6 +131,7 @@
     max-width: 500px; 
     height: auto;
     border-radius: 8px;
+    cursor: pointer;
 }
 .streak-box p {
     color: #84b5dd;
