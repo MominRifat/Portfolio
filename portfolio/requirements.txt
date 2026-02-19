@@ -4,4 +4,4 @@ sqlparse==0.5.5
 tzdata==2025.3
 gunicorn
 whitenoise==6.5.0
-
+mangum==0.26.0
