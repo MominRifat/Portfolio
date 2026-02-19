@@ -1,0 +1,254 @@
+.expertise {
+    background: linear-gradient(90deg, #212235, #212235, #212235);
+    padding: 40px 20px;
+    margin-bottom: 0px;
+}
+
+
+.skill-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 10px 0 30px;
+    background-image: linear-gradient(90deg, #3773CC 0%, #558bdb 25%, #ad7dd9 50%, #8d5dcb 75%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    background-image: linear-gradient(90deg, #3773CC 0%, #558bdb 25%, #ad7dd9 50%, #8d5dcb 75%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.cp-profiles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.cp-card {
+    width: 300px;
+    padding: 25px;
+    border-radius: 16px;
+    background: rgba(119, 121, 140, 0.08);
+    border: 2px solid rgba(85, 141, 193, 0.12);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(14px);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.cp-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+}
+
+.c1 {
+    margin-bottom: 8px;
+    background: linear-gradient(
+    to left,
+    #aad0e3 0%,
+    #b6a9e7 25%,
+    #a9cde7 50%,
+    #cab4e7 75%,
+    #badfed 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+.c2 {
+    margin-bottom: 8px;
+    background: linear-gradient(
+    to left,
+    #a1e0a5 0%,
+    #91d7d9 25%,
+    #a9cde7 50%,
+    #7ae0c6 75%,
+    #73bdd8 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+.c3 {
+    margin-bottom: 8px;
+    background: linear-gradient(
+    to left,
+    #49dbcf 0%,
+    #409cce 25%,
+    #73bae1 50%,
+    #8b77e3 75%,
+    #6774e6 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+.cp-card p {
+    margin: 8px 0;
+    color: #92b4d0;
+    font-size: 0.95rem;
+}
+
+.cp-card a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 8px;           
+    border-radius: 6px;           
+    background: #71a7e6;
+    color: #201f20;
+    font-size: 0.85rem;
+    font-weight: bold;             
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cp-card a:hover {
+    background: #8ac0fd;
+    color: #353939;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(198, 191, 191, 0.3); 
+}
+
+
+.streak-box {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.streak-box img {
+    width: 100%;
+    max-width: 500px; 
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.streak-box p {
+    color: #84b5dd;
+    font-size: 1.2rem; 
+}
+.contest-list {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contest-item {
+    padding: 20px 18px;
+    border-radius: 12px;
+    background: rgba(119, 121, 140, 0.08);
+    border: 2px solid rgba(85, 141, 193, 0.12);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(
+    to left,
+    #aad0e3 0%,
+    #b6a9e7 25%,
+    #a9cde7 50%,
+    #cab4e7 75%,
+    #badfed 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    font-weight: 500;
+    text-align: center;
+    height: 140px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.contest-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+}
+
+.last-item {
+    grid-column: 1 / -1;  
+    justify-self: center;  
+    max-width: 260px;  
+}
+
+
+.club-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+.club-card {
+    width: 280px;
+    padding: 22px;
+    border-radius: 16px;
+    background: rgba(119, 121, 140, 0.08);
+    border: 2px solid rgba(85, 141, 193, 0.12);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(14px);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.club-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+}
+.club-card h3 {
+    margin-bottom: 6px;
+    background: linear-gradient(
+    to left,
+    #49dbcf 0%,
+    #409cce 25%,
+    #73bae1 50%,
+    #8b77e3 75%,
+    #6774e6 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+.club-card p {
+    margin: 0;
+    background: linear-gradient(
+    to left,
+    #aad0e3 0%,
+    #b6a9e7 25%,
+    #a9cde7 50%,
+    #cab4e7 75%,
+    #badfed 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .cp-profiles, .club-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cp-card, .club-card {
+        width: 90%;
+        height: auto; 
+    }
+    .streak-box img {
+        max-width: 100%;
+    }
+}
