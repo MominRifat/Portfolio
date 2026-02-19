@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "Portfolio/portfolio/api_handler.py",
+      "src": "portfolio/api_handler.py",
       "use": "@vercel/python",
       "config": { "maxLambdaSize": "50mb" }
     }
@@ -10,7 +10,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "Portfolio/portfolio/api_handler.py"
+      "dest": "portfolio/api_handler.py"
     }
   ]
 }
