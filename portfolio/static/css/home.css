@@ -55,6 +55,7 @@ body {
     display: flex;
     flex-direction: column;
     border: 2px solid rgba(144, 192, 216, 0.18);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 26px;
     background: linear-gradient(90deg, #212235, #212235, #212235);
@@ -184,10 +185,10 @@ body {
     font-weight: 600;
     background: linear-gradient(
         to bottom,
-        #aad0e3 0%,
-        #b6a9e7 25%,
-        #a9cde7 50%,
-        #cab4e7 75%,
+        #b2d0df 0%,
+        #b1a7d5 25%,
+        #a4c1d5 50%,
+        #b5a5cb 75%,
         #badfed 100%
     );
     background-clip: text;
@@ -307,12 +308,10 @@ body {
 .project-head {
     font-size: 2.8rem;
     font-weight: 700;
-    color: #3773CC;
     background-image: linear-gradient(90deg, #558bdb 40%, #ad7dd9 34%, #8d5dcb 83%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: inline-block;
     margin: 4px 0 12px 0;
 }
 
@@ -327,7 +326,7 @@ body {
     );
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;  
+    -webkit-text-fill-color: transparent;
     font-size: 1.3rem;
     margin-bottom: 40px;
 }
@@ -341,56 +340,68 @@ body {
 }
 
 .project-card {
-    background: linear-gradient(180deg, #1f1f35, #1b2231);
+    position: relative;
     border-radius: 8px;
     overflow: hidden;
+    background: linear-gradient(180deg, #1f1f35, #1b2231);
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgba(255, 255, 255, 0.3); 
-    box-shadow: 0 0 12px rgba(0,0,0,0.2);
 }
 
 .project-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 35px rgba(109, 184, 230, 0.25);
+    box-shadow: 0 14px 40px rgba(109,184,230,0.28);
 }
 
 .project-card img {
     width: 100%;
     height: 100%;
     max-height: 350px;
-    object-fit: cover; 
+    object-fit: cover;
     display: block;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    filter: blur(8px) brightness(0.4);
+    transition: filter 0.5s ease;
+    cursor: pointer;
+}
+
+.project-card:hover img {
+    filter: blur(0) brightness(1);
 }
 
 .project-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin: 0;
-    font-size: 1.3rem; 
+    font-size: 1.7rem;
     font-weight: 600;
     background: linear-gradient(
         to bottom,
-        #8fbfd6 0%,
-        #a79ad8 25%,
-        #8fb9d6 50%,
+        #88c0da 0%,
+        #9a89d7 25%,
+        #7badd0 50%,
         #b39ad6 75%,
-        #9fc8d8 100%
+        #7cb8d0 100%
     );
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;  
-    padding: 8px 0; 
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    white-space: nowrap;
     text-align: center;
-    min-height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(109, 179, 236, 0.477);
-    border-radius: 4px;
 }
+
+.project-card:hover .project-title {
+    opacity: 0;
+}
+
+.projects-section .link-container {
+    text-align: center;
+}
+
 a.project-link {
     display: inline-block;
     padding: 10px 12px;
@@ -400,32 +411,29 @@ a.project-link {
     border-radius: 8px;
     font-weight: 600;
     transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    text-align: center;
-    margin: 25px auto 5px auto; 
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
-}
-.projects-section .link-container {
-    text-align: center;
+    border: 1px solid rgba(255,255,255,0.2);
+    margin: 25px auto 5px auto;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.5);
 }
 
 a.project-link:hover {
     background: #8ac0fd;
     color: #353939;
     transform: translateY(-3px);
-    box-shadow: 0 6px 10px rgba(198, 191, 191, 0.3);
+    box-shadow: 0 6px 10px rgba(198,191,191,0.3);
 }
 
 a.project-link:active {
     transform: translateY(0);
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255,255,255,0.3);
 }
 
 a.project-link.active {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255,255,255,0.3);
     border-color: rgba(255,255,255,0.4);
 }
+
 
 
 
@@ -492,7 +500,7 @@ a.project-link.active {
 }
 
 .terminal-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-3px);
     box-shadow: 0 18px 45px rgba(0,0,0,0.6);
 }
 
@@ -637,12 +645,13 @@ a.project-link.active {
     width: 325px;
     transition: 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
     justify-items: center;
     justify-content: center;
 }
 
 .service-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-3px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
 

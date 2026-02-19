@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #020327, #010f1f 70%, #02061d);
+    background: linear-gradient(to left, #1b1c2d, #121422 70%, #161222);
     color: #fff;
 }
 
@@ -8,6 +8,9 @@ body {
     margin: 1px auto;
     padding: 5px 10px;
     text-align: center;
+    background: rgba(119, 121, 140, 0.08);
+    border: 2px solid rgba(85, 141, 193, 0.12);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
 }
 
 .contact-title {
@@ -30,6 +33,7 @@ body {
     align-content: center;
     align-items: center;
     width: 425px;
+
 }
 
 .contact-form-section .form-group {
@@ -43,6 +47,17 @@ body {
     align-content: center;
     gap: 8px;
     margin-bottom: 6px;
+    background: linear-gradient(
+    to left,
+    #a1e0a5 0%,
+    #91d7d9 25%,
+    #a9cde7 50%,
+    #7ae0c6 75%,
+    #73bdd8 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
 }
 
 .contact-form-section input,
@@ -50,15 +65,17 @@ body {
     width: 100%;
     padding: 10px 12px;
     border-radius: 6px;
-    border: 1px solid rgba(255,255,255,0.3);
-    background: rgba(255,255,255,0.05);
+    background: rgba(119, 121, 140, 0.08);
+    border: 2px solid rgba(85, 141, 193, 0.12);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
     color: #fff;
     font-size: 1rem;
 }
 
 .contact-form-section button {
-    background: #58a6ff;
-    color: #fff;
+    background: #71a7e6;
+    color: #201f20;
+    font-size: 0.85rem;
     border: none;
     padding: 12px 25px;
     border-radius: 8px;
@@ -73,7 +90,10 @@ body {
 }
 
 .contact-form-section button:hover {
-    background: #1c7ed6;
+    background: #8ac0fd;
+    color: #353939;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(198, 191, 191, 0.3);
 }
 
 .contact-info-section {
@@ -88,7 +108,7 @@ body {
 }
 
 .contact-logos a {
-    color: #1c7ed6;
+    color: #71a7e6;
     transition: transform 0.2s;
 }
 
@@ -98,13 +118,24 @@ body {
 }
 
 .contact-details p {
+    background: linear-gradient(
+    to left,
+    #aad0e3 0%,
+    #b6a9e7 25%,
+    #a9cde7 50%,
+    #cab4e7 75%,
+    #badfed 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
     font-size: 1rem;
     margin: 8px 0;
 }
 
 .contact-details i {
     margin-right: 10px;
-    color: #58a6ff;
+    color: #71a7e6;
 }
 
 @media (max-width: 768px) {

@@ -1,5 +1,5 @@
 .service-container {
-    background: linear-gradient(to bottom, #020327, #01041f 70%, #02061d);
+    background: linear-gradient(90deg, #151520, #1b1c2d, #1a1b2c);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,14 +28,24 @@
 
 .service-status p {
     font-size: 1.3rem;
-    color: #c9d1d9;
+    background: linear-gradient(
+    to left,
+    #49dbcf 0%,
+    #409cce 25%,
+    #73bae1 50%,
+    #8b77e3 75%,
+    #6774e6 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
     max-width: 500px;
     line-height: 1.2;
     margin-bottom: 10px;
 }
 
 .service-status {
-    background: rgba(225, 219, 219, 0.05);
+    background: rgba(119, 121, 140, 0.08);
     border-radius: 12px;
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);

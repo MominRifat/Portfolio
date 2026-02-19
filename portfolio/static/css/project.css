@@ -4,7 +4,6 @@ body {
     background: #1a1a2c;    
     opacity: 1;
     background-size: 18px 18px;
-    color: #f5f5f5;
 }
 
 .project-container {
@@ -120,16 +119,17 @@ body {
 
 .project-tech i {
     font-size: 24px;
+    
 }
 
 
 .fa-html5 { color: #e34f26; }
 .fa-css3-alt { color: #1572b6; }
 .fa-js { color: #f7df1e; }
-.fa-python { color: #3776ab; }
+.fa-python { color: #c3c607; }
 .devicon-django-plain { color: #278867; }
 .fa-solid.fa-database { color: #f29111; }
-.fa-java { color: #007396; }
+.fa-java { color: #e90606; }
 .devicon-c-plain { color: #a8b9cc; }
 .devicon-cplusplus-plain { color: #00599c; }
 .fa-solid.fa-object-group { color: #f0db4f; }
@@ -143,12 +143,24 @@ body {
     padding: 6px 10px;
     border-radius: 8px;
     font-size: 0.9rem;
-    color: #bac7d8;
+    color: #afc4ef;
     font-weight: 600;
     cursor: default;
     transition: background 0.3s ease;
 }
-
+.col1{
+    background: linear-gradient(
+    to left,
+    #49dbcf 0%,
+    #409cce 25%,
+    #73bae1 50%,
+    #8b77e3 75%,
+    #6774e6 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
 .tech-item:hover {
     background: rgba(255,255,255,0.2);
 }

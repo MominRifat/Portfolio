@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #020327, #010f1f 70%, #02061d);
+    background: #1a1a2c;    
     color: #ffffff;
 }
 
@@ -12,8 +12,9 @@ body {
 .section {
     margin-bottom: 40px;
     display: block; 
-    background-color: rgba(255, 255, 255, 0.02);
+    background-color: rgba(25, 20, 33, 0.3);
     text-align: center; 
+    border-radius: 10px;
 }
 
 .section h2 {
@@ -30,12 +31,13 @@ body {
 
 .card {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.07);
+    background: rgba(119, 121, 140, 0.08);
     backdrop-filter: blur(16px);
     border-radius: 8px;
     padding: 25px 28px;
     margin: 0 15px 20px auto; 
     border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease;
     height: 100px;
     width: 325px;
@@ -46,7 +48,7 @@ body {
 }
 
 .card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-3px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
 }
 
@@ -54,32 +56,94 @@ body {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 6px;
+    background: linear-gradient(
+    to left,
+    #49dbcf 0%,
+    #409cce 25%,
+    #73bae1 50%,
+    #8b77e3 75%,
+    #6774e6 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
 }
 
 .subtitle {
-    color: #cfd8df;
+        background: linear-gradient(
+    to left,
+    #a1e0a5 0%,
+    #91d7d9 25%,
+    #a9cde7 50%,
+    #7ae0c6 75%,
+    #73bdd8 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 0.95rem;
     margin-bottom: 6px;
 }
 
 .meta {
     font-size: 0.9rem;
-    color: #aab4bd;
+        background: linear-gradient(
+    to left,
+    #aad0e3 0%,
+    #b6a9e7 25%,
+    #a9cde7 50%,
+    #cab4e7 75%,
+    #badfed 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
 }
 
 .award {
     font-size: 1.05rem;
     font-weight: 600;
     margin-bottom: 6px;
+    background: linear-gradient(
+    to left,
+    #49dbcf 0%,
+    #409cce 25%,
+    #73bae1 50%,
+    #8b77e3 75%,
+    #6774e6 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
 }
 
 .award-desc {
     font-size: 0.95rem;
-    color: #d6d6d6;
+    background: linear-gradient(
+    to left,
+    #aad0e3 0%,
+    #b6a9e7 25%,
+    #a9cde7 50%,
+    #cab4e7 75%,
+    #badfed 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
 }
 .semester {
     font-size: 0.9rem;
-    color: #d6d6d6;
+    background: linear-gradient(
+    to left,
+    #aad0e3 0%,
+    #b6a9e7 25%,
+    #a9cde7 50%,
+    #cab4e7 75%,
+    #badfed 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
 }
 
 
