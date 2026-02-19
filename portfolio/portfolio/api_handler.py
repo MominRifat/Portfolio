@@ -1,4 +1,8 @@
-from portfolio.wsgi import application  # normal Django WSGI
-from mangum import Mangum
+import os
+from django.core.wsgi import get_wsgi_application
+from mangum import Mangum  # For serverless
 
-handler = Mangum(application)  # serverless handler
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "portfolio.settings")
+
+application = get_wsgi_application()
+handler = Mangum(application)  # Vercel entry point
