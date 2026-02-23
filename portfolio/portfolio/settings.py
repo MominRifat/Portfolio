@@ -8,6 +8,9 @@ Full production-ready configuration for static files, templates, and serverless 
 
 import os
 from pathlib import Path
+import os
+import dj_database_url
+
 
 # --------------------------
 # BASE DIRECTORIES
@@ -20,8 +23,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # production static files
 # --------------------------
 # SECURITY
 # --------------------------
-SECRET_KEY = 'django-insecure-(gyat9mgt$sh@e=5g6b*^fvi7peq7aavd70anq1tb$jss%ax#t'
-DEBUG = True  # set False in production
+SECRET_KEY = os.environ.get('SECRET_KEY')
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'  # set False in production
 ALLOWED_HOSTS = ['*']  # allows all Vercel domains
 
 # --------------------------
@@ -88,10 +91,7 @@ TEMPLATES = [
 # DATABASE
 # --------------------------
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
 }
 
 # --------------------------
