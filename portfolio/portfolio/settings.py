@@ -23,7 +23,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # production static files
 # --------------------------
 # SECURITY
 # --------------------------
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-local-dev-key')
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'  # set False in production
 ALLOWED_HOSTS = ['*']  # allows all Vercel domains
 
